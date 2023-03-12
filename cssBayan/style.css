@@ -6,13 +6,13 @@
     margin-bottom: 20px;
 }
 .UnitInput {
-    position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 }
 .UnitTrigger {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     border: 1px solid black;
 }
