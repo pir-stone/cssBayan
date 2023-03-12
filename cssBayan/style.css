@@ -1,4 +1,6 @@
-.Units {}
+.Units {
+    background-color:rgb(145, 211, 24);
+}
 .Unit {
     position: relative;
     margin-bottom: 20px;
@@ -15,7 +17,10 @@
     border: 1px solid black;
 }
 .UnitContent {
-    padding: 20px;
+    padding: 1% 1%;
+    width:400px;
+    height:400px;
+    justify-content: center; 
     border: 1px solid black;
     border-top: none;
     display: none;
@@ -29,17 +34,10 @@
 }
 
 .icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     transition: 0.8s ease-out;}
-
-
-//.mem {
-    color: blue;
-    cursor: pointer;
-    font-size: 90px;
-    transition: 0.2s;
-}
-.mem:hover {
-    color: rgb(231, 12, 96);
-}//
+ 
+.Unit .icon {
+        transform: rotate(45deg);
+    }
