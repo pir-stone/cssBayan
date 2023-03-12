@@ -1,0 +1,45 @@
+.Units {}
+.Unit {
+    position: relative;
+    margin-bottom: 20px;
+}
+.UnitInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.UnitTrigger {
+    display: block;
+    padding: 20px;
+    border: 1px solid black;
+}
+.UnitContent {
+    padding: 20px;
+    border: 1px solid black;
+    border-top: none;
+    display: none;
+}
+.UnitInput:checked ~ .UnitTrigger {
+    background-color: blue;
+}
+.UnitInput:checked ~ .UnitContent {
+    background-color: blueviolet;
+    display: block;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    transition: 0.8s ease-out;}
+
+
+//.mem {
+    color: blue;
+    cursor: pointer;
+    font-size: 90px;
+    transition: 0.2s;
+}
+.mem:hover {
+    color: rgb(231, 12, 96);
+}//
