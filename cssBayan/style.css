@@ -1,0 +1,43 @@
+.Units {
+    background-color:rgb(145, 211, 24);
+}
+.Unit {
+    position: relative;
+    margin-bottom: 20px;
+}
+.UnitInput {
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.UnitTrigger {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid black;
+}
+.UnitContent {
+    padding: 1% 1%;
+    width:400px;
+    height:400px;
+    justify-content: center; 
+    border: 1px solid black;
+    border-top: none;
+    display: none;
+}
+.UnitInput:checked ~ .UnitTrigger {
+    background-color: blue;
+}
+.UnitInput:checked ~ .UnitContent {
+    background-color: blueviolet;
+    display: block;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: 0.8s ease-out;}
+ 
+.Unit .icon {
+        transform: rotate(45deg);
+    }
